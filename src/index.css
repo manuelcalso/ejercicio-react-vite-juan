@@ -25,3 +25,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#formid {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 180, 28);
+  margin: 10px 0px 10px 0px;
+}

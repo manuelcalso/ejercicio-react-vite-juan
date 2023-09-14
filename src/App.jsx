@@ -5,6 +5,7 @@ import { Onecard, Secondcard } from "./Card"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { SpinnerExp, Growspinner } from "./Spinner"
 import Acordion from "./Acordion"
+import Basicform from "./Forms"
 
 function App() {
   const metadata = {
@@ -29,6 +30,9 @@ function App() {
       </div>
       <div>
         <Acordion />
+      </div>
+      <div id="formid">
+        <Basicform />
       </div>
       <div>
         <Footer />
