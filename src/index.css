@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .carousel {
   color: black;
   background-color: green;
@@ -7,4 +12,16 @@
   height: 300px;
 
   border-radius: 50%;
+}
+
+.footerr {
+  background-color: rgba(0, 128, 0, 0.459);
+  width: auto;
+}
+
+#Card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
