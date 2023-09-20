@@ -58,7 +58,7 @@ function Footer() {
                 </li>
               </ul>
             </article>
-            <article className="gridpan3">
+            <article className="gridspan3">
               <h3>SOPORTE</h3>
               <ul>
                 <li>
@@ -72,7 +72,7 @@ function Footer() {
                 </li>
               </ul>
             </article>
-            <article className="grisspan4">
+            <article className="gridspan4">
               <h3>NOSOTROS</h3>
               <ul>
                 <li>

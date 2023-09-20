@@ -6,7 +6,7 @@ import roberto from "./../src/assets/roberto1.jpg"
 
 export function Onecard({ nombreuno, edad1, comentario1 }) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" }} id="card1">
       <img src={maria} />
       <Card.Body>
         <Card.Title>{nombreuno}</Card.Title>
@@ -22,7 +22,7 @@ export function Onecard({ nombreuno, edad1, comentario1 }) {
 
 export function Secondcard({ nombredos, edad2, comentario2 }) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" }} id="card2">
       <img src={roberto} />
       <Card.Body>
         <Card.Title>{nombredos}</Card.Title>
@@ -38,7 +38,7 @@ export function Secondcard({ nombredos, edad2, comentario2 }) {
 
 export function Thirdcard({ nombredos, edad2, comentario2 }) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" }} id="card3">
       <img src={ana} />
       <Card.Body>
         <Card.Title>{nombredos}</Card.Title>
