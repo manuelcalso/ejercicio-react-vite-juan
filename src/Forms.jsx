@@ -6,7 +6,6 @@ function Basicform() {
     <Form>
       <h1>Enterate de nuestros planes</h1>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
           Nunca compartiremos tus datos...

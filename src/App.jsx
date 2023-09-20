@@ -68,8 +68,10 @@ function App() {
           comentario2={datacards.comentario3}
         />
       </div>
-      <div id="formid">
-        <Basicform />
+      <div id="generalform">
+        <div id="formid">
+          <Basicform />
+        </div>
       </div>
       <div>
         <Acordion />

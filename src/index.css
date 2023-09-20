@@ -33,9 +33,61 @@
   src: url("./assets/fonts/ragara/Ragara.otf");
 }
 
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 body {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .carousel {
@@ -93,11 +145,7 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(125, 255, 0);
-  background: radial-gradient(
-    circle,
-    rgba(125, 255, 0, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: radial-gradient(circle, rgba(125, 255, 0, 1) 0%, #94bbe9 100%);
   text-shadow: 1px 1px rgb(255, 0, 242);
 }
 
@@ -173,8 +221,17 @@ body {
   transition-duration: 750ms;
 }
 
-#formid {
+#generalform {
   display: flex;
+  justify-content: center;
+
+  -webkit-animation: color-change-3x 4s linear infinite alternate both;
+  animation: color-change-3x 4s linear infinite alternate both;
+}
+
+#formid {
+  display: inline-block;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: rgb(206, 255, 0);
@@ -185,7 +242,7 @@ body {
     rgba(0, 5, 255, 1) 100%
   );
   font-family: "Josefin sans";
-  text-shadow: 1px 2px gray;
+  text-shadow: 1px 2px rgb(0, 0, 0);
   color: white;
   border-radius: 10px;
 }
