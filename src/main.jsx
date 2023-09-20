@@ -4,6 +4,7 @@ import App from "./App.jsx"
 import "./index.css"
 import ErrorPage from "./Error.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Menu from "./Menu.jsx"
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/menu",
-    element: <ErrorPage />,
+    element: <Menu />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/registrate",

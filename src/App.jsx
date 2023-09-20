@@ -40,7 +40,6 @@ function App() {
       <div id="headercontainer">
         <Header />
       </div>
-
       <div>
         <Content
           tituloslideuno={datacarousel.slideunotitulo}

@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap"
 
 function Acordion() {
   return (
-    <Accordion>
+    <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header className="acordeonheader">
           Desayunos

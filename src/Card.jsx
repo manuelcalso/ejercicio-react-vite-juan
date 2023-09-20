@@ -12,7 +12,7 @@ export function Onecard({ nombreuno, edad1, comentario1 }) {
         <Card.Title>{nombreuno}</Card.Title>
         <Card.Text>{edad1} años</Card.Text>
         <Card.Text>{comentario1}</Card.Text>
-        <Button variant="primary" href="/comenta">
+        <Button variant="primary" href="/comenta" id="cardsbuttons">
           Deja tu comentario!
         </Button>
       </Card.Body>
@@ -28,7 +28,7 @@ export function Secondcard({ nombredos, edad2, comentario2 }) {
         <Card.Title>{nombredos}</Card.Title>
         <Card.Text>{edad2}</Card.Text>
         <Card.Text>{comentario2}</Card.Text>
-        <Button variant="primary" href="/comenta">
+        <Button variant="primary" href="/comenta" id="cardsbuttons">
           Deja tu comentario!
         </Button>
       </Card.Body>
@@ -44,7 +44,7 @@ export function Thirdcard({ nombredos, edad2, comentario2 }) {
         <Card.Title>{nombredos}</Card.Title>
         <Card.Text>{edad2}</Card.Text>
         <Card.Text>{comentario2}</Card.Text>
-        <Button variant="primary" href="/comenta">
+        <Button variant="primary" href="/comenta" id="cardsbuttons">
           Deja tu comentario!
         </Button>
       </Card.Body>
