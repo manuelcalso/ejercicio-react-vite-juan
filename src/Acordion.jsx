@@ -33,7 +33,9 @@ function Acordion() {
               el chile y se le agregan los huevos, que pueden batirse
               previamente o no. Se sirven con tortillas, claro.
               <div className="desayunobutton2">
-                <Button variant="success">Consulta el menu de desayunos</Button>{" "}
+                <Button className="flex flex-column justify-center bg-black border border-transparent">
+                  Consulta el menu de desayunos
+                </Button>{" "}
               </div>
             </p>
             <img src={huevosmexicanos} />
@@ -54,7 +56,9 @@ function Acordion() {
               gratinado.
             </p>
             <div className="desayunobutton">
-              <Button variant="success">Consulta el menu de almuerzos</Button>{" "}
+              <Button className="flex justify-center item-center bg-black border border-transparent">
+                Consulta el menu de almuerzos
+              </Button>{" "}
             </div>
           </div>
         </Accordion.Body>
@@ -73,7 +77,9 @@ function Acordion() {
               mediterraneo.
             </p>
             <div className="desayunobutton">
-              <Button variant="success">Consulta el menu de bebidas</Button>{" "}
+              <Button className="justify-center bg-black item-center border border-transparent">
+                Consulta el menu de bebidas
+              </Button>{" "}
             </div>
           </div>
         </Accordion.Body>

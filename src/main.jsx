@@ -5,6 +5,7 @@ import "./index.css"
 import ErrorPage from "./Error.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Menu from "./Menu.jsx"
+import Registrate from "./Registrate.jsx"
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/registrate",
-    element: <ErrorPage />,
+    element: <Registrate />,
   },
   {
     path: "/buscarreservacion",

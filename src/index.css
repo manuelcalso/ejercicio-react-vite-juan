@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @font-face {
   font-family: "Inclusive Sans";
   src: url("./assets/fonts/Inclusive_Sans/InclusiveSans-Regular.ttf");
@@ -82,6 +86,42 @@
   }
 }
 
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 body {
   justify-content: center;
   align-items: center;
@@ -126,6 +166,7 @@ body {
   letter-spacing: 4px;
   background-color: rgba(245, 245, 220, 0.3);
   border-radius: 10px;
+  font-size: 3rem;
 }
 
 .carousel p {
@@ -157,25 +198,29 @@ body {
   align-items: center;
 }
 
+.footerp {
+  font-size: small;
+}
+
 .gridspan2 {
   grid-column: 2;
   display: flex;
-  justify-content: start;
+  justify-content: flex-center;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 
 .gridspan3 {
   grid-column: 3;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
 .gridspan4 {
   grid-column: 4;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
@@ -196,10 +241,14 @@ body {
 #gridfooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: "josefin sans";
+  font-size: 20px;
 }
 
 #gridfooter ul {
   list-style: none;
+  font-family: "josefin sans";
+  font-size: 20px;
 }
 #Card {
   display: flex;
@@ -241,12 +290,20 @@ body {
   text-shadow: 1px 2px rgb(0, 0, 0);
   color: white;
   border-radius: 10px;
+  width: 30rem;
+  height: 10rem;
+  margin: 10px 0px 10px;
+}
+
+#formid h1 {
+  font-size: 2rem;
 }
 
 #formid Button {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
   -moz-transition: 0.5s, color 0.1s;
+  background-color: rgba(0, 128, 0, 0.753);
 }
 
 #formid Button:hover {
@@ -415,17 +472,6 @@ body {
   box-shadow: 5px 1px rgb(131, 58, 180);
 }
 
-.desayunobutton {
-  display: flex;
-  justify-content: center;
-}
-
-.desayunobutton2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .desayunobutton Button {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
@@ -575,6 +621,153 @@ body {
   background-color: #fdbb2d;
 }
 
+#table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+}
+#table th {
+  border-radius: 10px;
+  background-color: #d9ff00;
+}
+
+#table td {
+  background-color: #51ff00be;
+
+  border-radius: 5px;
+}
+
+#table p {
+  font-family: "Josefin Sans";
+  font-size: large;
+  font-style: italic;
+}
+
+#table Button {
+  background: rgb(0, 99, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 99, 255, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  font-size: x-large;
+  color: #c6fff9;
+}
+
+#table Button:hover {
+  background: rgb(0, 99, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 99, 255, 1) 53%,
+    rgba(255, 0, 0, 1) 100%
+  );
+
+  animation-name: shake;
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+}
+
+.tablecontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdbb2d;
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      #45ebf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #45ebf7 87.5%,
+      #45ebf7
+    ),
+    linear-gradient(
+      150deg,
+      #45ebf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #45ebf7 87.5%,
+      #45ebf7
+    ),
+    linear-gradient(
+      30deg,
+      #45ebf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #45ebf7 87.5%,
+      #45ebf7
+    ),
+    linear-gradient(
+      150deg,
+      #45ebf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #45ebf7 87.5%,
+      #45ebf7
+    ),
+    linear-gradient(
+      60deg,
+      #45ebf777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #45ebf777 75%,
+      #45ebf777
+    ),
+    linear-gradient(
+      60deg,
+      #45ebf777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #45ebf777 75%,
+      #45ebf777
+    );
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.tablecontent img {
+  width: 300px;
+  height: 200px;
+}
+
+#registratecontain {
+  display: inline-table;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Josefin Sans";
+  font-size: x-large;
+}
+
+#registratecontain Button {
+  background-color: #ea2222;
+  border: transparent;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 34%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
 @media screen and (max-width: 550px) {
   #footerid {
     display: flex;
@@ -650,5 +843,23 @@ body {
     border-radius: 10px;
     box-shadow: 5px 1px rgb(131, 58, 180);
     border: 1px solid black;
+  }
+  .carousel h1 {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+  }
+  #generalform {
+    height: 200px;
+  }
+  #table {
+    font-size: small;
+  }
+  #table Button {
+    font-size: small;
+  }
+  .tablecontent img {
+    width: 200px;
+    height: 100px;
   }
 }

@@ -94,8 +94,8 @@ function Footer() {
             </article>
           </div>
           <div>
-            <p>
-              ©2023 U Camp. Todos los derechos reservados.Esta es una página
+            <p className="footerp">
+              ©2023 U Camp. Todos los derechos reservados. Esta es una página
               restaurante APP ficticia para fines académicos hecha por Juan
               Calleros https://github.com/manuelcalso
             </p>

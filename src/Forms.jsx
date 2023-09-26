@@ -1,6 +1,10 @@
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 
+const mostrarAlerta = () => {
+  alert("tu suscripcion se ha registrado")
+}
+
 function Basicform() {
   return (
     <Form>
@@ -11,7 +15,11 @@ function Basicform() {
           Nunca compartiremos tus datos...
         </Form.Text>
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button
+        type="submit"
+        className="border border-transparent"
+        onClick={mostrarAlerta}
+      >
         Suscribir
       </Button>
     </Form>
