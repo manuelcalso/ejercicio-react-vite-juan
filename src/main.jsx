@@ -6,6 +6,7 @@ import ErrorPage from "./Error.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Menu from "./Menu.jsx"
 import Registrate from "./Registrate.jsx"
+import Contacto from "./Contacto.jsx"
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contacto",
-    element: <ErrorPage />,
+    element: <Contacto />,
   },
   {
     path: "/comenta",

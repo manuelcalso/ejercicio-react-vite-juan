@@ -54,7 +54,7 @@ function Footer() {
               <h3>CARTA</h3>
               <ul>
                 <li>
-                  <a>Menu</a>
+                  <a href="/menu">Menu</a>
                 </li>
               </ul>
             </article>

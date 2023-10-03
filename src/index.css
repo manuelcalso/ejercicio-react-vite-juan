@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 @font-face {
   font-family: "Inclusive Sans";
@@ -122,12 +123,67 @@
   }
 }
 
-body {
-  justify-content: center;
-  align-items: center;
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
 
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+a {
+  text-decoration: none;
 }
 
 .carousel {
@@ -228,14 +284,24 @@ body {
 .facebookgrid svg {
   width: 50px;
   height: 50px;
+  color: black;
 }
 .instagramgrid {
   width: 50px;
   height: 50px;
 }
+
+.instagramgrid svg {
+  color: black;
+}
+
 .twittergrid {
   width: 50px;
   height: 50px;
+}
+
+.twittergrid svg {
+  color: black;
 }
 
 #gridfooter {
@@ -250,6 +316,12 @@ body {
   font-family: "josefin sans";
   font-size: 20px;
 }
+
+.gridspan2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #Card {
   display: flex;
   flex-direction: row;
@@ -287,7 +359,7 @@ body {
     rgba(0, 5, 255, 1) 100%
   );
   font-family: "Josefin sans";
-  text-shadow: 1px 2px rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(0, 0, 0);
   color: white;
   border-radius: 10px;
   width: 30rem;
@@ -325,6 +397,64 @@ body {
 .carousel-inner {
   display: flex;
   flex-direction: column;
+}
+
+#contactocontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Josefin medium";
+  color: black;
+  text-shadow: 2px 2px rgba(251, 255, 0, 0.712);
+
+  background-color: #78fffd;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    -45deg,
+    #97ffaa,
+    #97ffaa 5px,
+    #78fffd 5px,
+    #78fffd 25px
+  );
+}
+
+#contactinfo {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+}
+
+#contactinfo Button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #3700ff;
+  color: white;
+  width: 200px;
+}
+
+#contactinfo input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#contactinfo textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#ubicacion {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -414,25 +544,11 @@ body {
 
 .desayunoclass2 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.desayunoclass img {
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 5px 1px rgb(131, 58, 180);
-  border: 1px solid black;
-}
 .desayunoparrafo {
-  width: 500px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 2;
-  font-family: "Ragara";
-  font-size: x-large;
-  text-shadow: 1px 1px rgb(0, 0, 0);
   background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
@@ -440,15 +556,22 @@ body {
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
   );
-  color: white;
-  margin-bottom: 0px;
-  border-radius: 10px;
   box-shadow: 5px 1px rgb(131, 58, 180);
-  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  font-family: "Ragara";
+  font-size: x-large;
+  color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 .desayunoparrafo2 {
-  border: 1px solid black;
   width: 500px;
   height: 450px;
   display: flex;
@@ -458,7 +581,7 @@ body {
   line-height: 2;
   font-family: "Ragara";
   font-size: x-large;
-  text-shadow: 1px 1px rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(0, 0, 0);
   background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
@@ -565,13 +688,6 @@ body {
   align-items: center;
   background-image: url("./assets/geopattern.jpeg");
 }
-.almuerzoclass img {
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 5px 1px rgb(131, 58, 180);
-  border: 1px solid black;
-}
 
 .accordion-button {
   background: rgb(34, 193, 195);
@@ -592,14 +708,6 @@ body {
 
 .desayunoclass3 p {
   height: auto;
-}
-
-.desayunoclass3 img {
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 5px 1px rgb(131, 58, 180);
-  border: 1px solid black;
 }
 
 .me-auto {
@@ -740,6 +848,11 @@ body {
   height: 200px;
 }
 
+.tablecontent img:hover {
+  -webkit-animation: wobble-hor-bottom 2s both;
+  animation: wobble-hor-bottom 2s both;
+}
+
 #registratecontain {
   display: inline-table;
   flex-direction: column;
@@ -772,11 +885,36 @@ body {
   #footerid {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #gridspan1 {
     display: flex;
     flex-direction: column;
+  }
+
+  .gridspan2 a {
+    font-size: small;
+  }
+  .gridspan2 h3 {
+    font-size: medium;
+  }
+
+  .gridspan3 a {
+    font-size: small;
+  }
+
+  .gridspan3 h3 {
+    font-size: medium;
+  }
+
+  .gridspan4 a {
+    font-size: small;
+  }
+
+  .gridspan4 h3 {
+    font-size: medium;
   }
 
   #carouselcontainer p {
@@ -802,20 +940,6 @@ body {
     display: none;
   }
 
-  .desayunoclass img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .desayunoclass3 img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .almuerzoclass img {
-    width: 300px;
-    height: 300px;
-  }
   .almuerzoclass {
     background: rgb(131, 58, 180);
     background: linear-gradient(
@@ -861,5 +985,9 @@ body {
   .tablecontent img {
     width: 200px;
     height: 100px;
+  }
+
+  #contactocontainer iframe {
+    display: none;
   }
 }

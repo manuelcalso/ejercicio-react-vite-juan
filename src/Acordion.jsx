@@ -4,6 +4,7 @@ import huevosmexicanos from "./assets/huevosmexicanos.jpg"
 import aguasandia from "./assets/sandialimon.jpg"
 import lasana from "./assets/lasana.jpg"
 import { Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 function Acordion() {
   return (
@@ -13,7 +14,10 @@ function Acordion() {
           Desayunos
         </Accordion.Header>
         <Accordion.Body className="desayunoclass">
-          <img src={chilaquiles} />
+          <img
+            className="w-50 h-50 rounded-xlg shadow-md border border-black"
+            src={chilaquiles}
+          />
           <div>
             <p className="desayunoparrafo">
               CHILAQUILES<br></br> Se preparan a base de trocitos de tortilla de
@@ -33,19 +37,27 @@ function Acordion() {
               el chile y se le agregan los huevos, que pueden batirse
               previamente o no. Se sirven con tortillas, claro.
               <div className="desayunobutton2">
-                <Button className="flex flex-column justify-center bg-black border border-transparent">
-                  Consulta el menu de desayunos
+                <Button className="flex flex-column justify-center bg-black border border-black">
+                  <Link to="/menu" className="text-white">
+                    Consulta el menu de desayunos
+                  </Link>
                 </Button>{" "}
               </div>
             </p>
-            <img src={huevosmexicanos} />
+            <img
+              className="w-50 h-55 rounded-lg shadow-md border border-black"
+              src={huevosmexicanos}
+            />
           </div>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Almuerzos</Accordion.Header>
         <Accordion.Body className="almuerzoclass">
-          <img src={lasana} />
+          <img
+            className="w-96 h-72 rounded-lg shadow-md border border-black"
+            src={lasana}
+          />
           <div>
             <p className="desayunoparrafo">
               LASAGNA <br />
@@ -54,19 +66,24 @@ function Acordion() {
               verdura. Entre lámina y lámina también lleva bechamel, y para
               terminar abundante queso con el que se le dará su aspecto habitual
               gratinado.
+              <div className="desayunobutton">
+                <Button className="flex justify-center item-center bg-black border border-black text-white">
+                  <Link to="/menu" className="text-white">
+                    Consulta el menu de almuerzos
+                  </Link>
+                </Button>{" "}
+              </div>
             </p>
-            <div className="desayunobutton">
-              <Button className="flex justify-center item-center bg-black border border-transparent">
-                Consulta el menu de almuerzos
-              </Button>{" "}
-            </div>
           </div>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Bebidas</Accordion.Header>
         <Accordion.Body className="desayunoclass3">
-          <img src={aguasandia} />
+          <img
+            className="w-50 h-30 rounded-xl shadow-md border border-black"
+            src={aguasandia}
+          />
           <div>
             <p className="desayunoparrafo">
               AGUA DE SANDIA CON MENTA <br></br>
@@ -75,12 +92,14 @@ function Acordion() {
               la menta. Esta refrescante bebida es muy popular en muchas
               regiones, especialmente en los meses cálidos de verano del
               mediterraneo.
+              <div className="desayunobutton">
+                <Button className="justify-center bg-black item-center border border-black">
+                  <Link to="/menu" className="text-white">
+                    Consulta el menu de bebidas
+                  </Link>
+                </Button>{" "}
+              </div>
             </p>
-            <div className="desayunobutton">
-              <Button className="justify-center bg-black item-center border border-transparent">
-                Consulta el menu de bebidas
-              </Button>{" "}
-            </div>
           </div>
         </Accordion.Body>
       </Accordion.Item>

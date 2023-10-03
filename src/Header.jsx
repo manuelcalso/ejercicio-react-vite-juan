@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import NavDropdown from "react-bootstrap/NavDropdown"
+import { Link } from "react-router-dom"
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
       <Container>
         <nav className="logocontainer">
           <Navbar.Brand href="#home" id="logoName">
-            Fusion Global
+            <Link to="/"> Fusion Global</Link>
           </Navbar.Brand>
           <h3 href="#home" id="slogan">
             Cocina internacional
