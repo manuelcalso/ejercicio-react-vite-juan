@@ -23,9 +23,7 @@ function Header() {
             <Nav.Link href="/menu">Menu</Nav.Link>
             <NavDropdown title="Reservaciones" id="basic-nav-dropdown">
               <NavDropdown.Item href="/registrate">Registrate</NavDropdown.Item>
-              <NavDropdown.Item href="/buscarreservacion">
-                Busca tu reservacion
-              </NavDropdown.Item>
+              
               <NavDropdown.Item href="/reserva">Reserva</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/contacto">

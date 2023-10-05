@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Menu from "./Menu.jsx"
 import Registrate from "./Registrate.jsx"
 import Contacto from "./Contacto.jsx"
+import Reserva from "./Reserva.jsx"
 
 const router = createBrowserRouter([
   {
@@ -24,12 +25,8 @@ const router = createBrowserRouter([
     element: <Registrate />,
   },
   {
-    path: "/buscarreservacion",
-    element: <ErrorPage />,
-  },
-  {
     path: "/reserva",
-    element: <ErrorPage />,
+    element: <Reserva />,
   },
   {
     path: "/contacto",

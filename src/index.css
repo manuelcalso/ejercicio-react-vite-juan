@@ -457,6 +457,10 @@ a {
   height: auto;
 }
 
+#ubicacion iframe{
+  border-radius: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   #logoName {
     font-family: "Toonyline";

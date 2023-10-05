@@ -7,7 +7,7 @@ export default {
   plugins: [],
 };
 module.exports = {
-  purge: ["./../src/App.jsx", "./../src/Registrate.jsx"],
+  purge: ["./../src/App.jsx", "./../src/Registrate.jsx", "./../src/Reserva.jsx", './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
