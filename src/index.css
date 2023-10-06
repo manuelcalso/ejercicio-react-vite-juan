@@ -182,6 +182,24 @@
   }
 }
 
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 body{
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -429,6 +447,10 @@ a {
   flex-direction: column;
   width: 500px;
   height: auto;
+}
+
+#contactinfo h1{
+  font-size: xx-large;
 }
 
 #contactinfo Button {
@@ -882,12 +904,12 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(34, 193, 195);
-  background: radial-gradient(
-    circle,
-    #22c1c3 34%,
-    #fdbb2d 100%
-  );
+  background-image: url("./assets/fondoheader.png");
+  -webkit-animation: bg-pan-left 20s linear infinite both;
+	        animation: bg-pan-left 20s linear infinite both;
+          background-color: #dbfffe;
+
+  
 }
 
 .sectionreserva {

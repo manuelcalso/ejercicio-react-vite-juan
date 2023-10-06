@@ -22,7 +22,6 @@ export default function Reserva() {
       const response = await fetch(serverUrl)
       const allReservations = await response.json()
       
-
       setReservations(allReservations.data)
       return
     }
@@ -83,7 +82,7 @@ export default function Reserva() {
               <div>
               <label htmlFor="description">Descripcion de la reservacion</label>
               <br />
-              <textarea type="text" name="description" placeholder='cuantas personas, zona deseada...' className='border border-black rounded w-100' onChange={(e) => handleChange(e)} value={newReservation.description} />
+              <textarea type="text" name="description" placeholder='cuantas personas, zona abierta o cerrada...' className='border border-black rounded w-100' onChange={(e) => handleChange(e)} value={newReservation.description} />
               </div>
               <br />
               <div className='flex flex-row justify-center items-center h-20'>
@@ -104,7 +103,6 @@ export default function Reserva() {
           )
         })
       }
-
         </div>
         <div>
           <Footer/>
