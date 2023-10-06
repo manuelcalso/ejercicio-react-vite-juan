@@ -62,14 +62,15 @@ export default function Reserva() {
 
   return (
     <>
-    <section>
+    <section className='sectionreserva flex flex-col justify-center'>
         <div>
           <Header />
         </div>
-        <form className='flex flex-col justify-center items-center m-5 border border-black' onSubmit={(e) => handleSubmit(e, newReservation)} >
+        <div className='flex flex-row items-center justify-center'>
+        <form className='flex flex-col justify-center items-center m-5 border border-black bg-[#45ebf7] rounded w-80' onSubmit={(e) => handleSubmit(e, newReservation)} >
             <div>
               <div>
-              <h1 className='text-2xl'>Reserva tu mesa</h1>
+              <h1 className='text-3xl'>Reserva tu mesa</h1>
               </div>
               <div>
               <label htmlFor="title">Titular de la reservacion</label>
@@ -85,12 +86,14 @@ export default function Reserva() {
               <textarea type="text" name="description" placeholder='cuantas personas, zona deseada...' className='border border-black rounded w-100' onChange={(e) => handleChange(e)} value={newReservation.description} />
               </div>
               <br />
-              <div className='flex flex-row border border-black justify-center items-center h-20'>
-                <button className='text-white border border-black rounded bg-green-800 w-50 h-20'> Crear Reservacion</button>
+              <div className='flex flex-row justify-center items-center h-20'>
+                <button className='reservabutton text-white rounded bg-[#644164] w-50 h-20'> Crear Reservacion</button>
               </div>
+              <br />
             </div>
         </form>
-        <div className='border border-black'>
+        </div>
+        <div className='border border-black bg-[#fdbb2d]'>
       {
         reservations.length === 0 ? <p>no hay reservaciones...</p> : reservations.map(e => {
           return (
@@ -102,13 +105,12 @@ export default function Reserva() {
         })
       }
 
-    </div>
+        </div>
         <div>
           <Footer/>
         </div>
        
     </section>
-    
     </>
   )
 }
