@@ -199,10 +199,9 @@
   }
 }
 
-
-body{
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+body {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 a {
@@ -222,7 +221,11 @@ a {
     linear-gradient(225deg, #ff0000 25%, transparent 25%),
     linear-gradient(45deg, #ff0000 25%, transparent 25%),
     linear-gradient(315deg, #ff0000 25%, #ffffff 25%);
-  background-position: 40px 0, 40px 0, 0 0, 0 0;
+  background-position:
+    40px 0,
+    40px 0,
+    0 0,
+    0 0;
   background-size: 40px 40px;
   background-repeat: repeat;
 }
@@ -395,9 +398,15 @@ a {
 }
 
 #formid Button {
-  transition: 0.5s, color 0.1s;
-  -webkit-transition: 0.5s, color 0.1s;
-  -moz-transition: 0.5s, color 0.1s;
+  transition:
+    0.5s,
+    color 0.1s;
+  -webkit-transition:
+    0.5s,
+    color 0.1s;
+  -moz-transition:
+    0.5s,
+    color 0.1s;
   background-color: rgba(0, 128, 0, 0.753);
 }
 
@@ -449,7 +458,7 @@ a {
   height: auto;
 }
 
-#contactinfo h1{
+#contactinfo h1 {
   font-size: xx-large;
 }
 
@@ -484,7 +493,7 @@ a {
   height: auto;
 }
 
-#ubicacion iframe{
+#ubicacion iframe {
   border-radius: 20px;
 }
 
@@ -495,7 +504,9 @@ a {
     color: rgb(0, 3, 160);
     text-shadow: 1px 30px rgb(255, 2, 2);
     animation: logo-spin infinite 40s linear;
-    transition: font-weight 750ms, font-size 750ms;
+    transition:
+      font-weight 750ms,
+      font-size 750ms;
   }
 }
 
@@ -554,15 +565,25 @@ a {
     linear-gradient(225deg, #ffffff 25%, transparent 25%),
     linear-gradient(45deg, #ffffff 25%, transparent 25%),
     linear-gradient(315deg, #ffffff 25%, #c6fff9 25%);
-  background-position: 40px 0, 40px 0, 0 0, 0 0;
+  background-position:
+    40px 0,
+    40px 0,
+    0 0,
+    0 0;
   background-size: 40px 40px;
   background-repeat: repeat;
 }
 
 #cardsbuttons {
-  transition: 0.5s, color 0.1s;
-  -webkit-transition: 0.5s, color 0.1s;
-  -moz-transition: 0.5s, color 0.1s;
+  transition:
+    0.5s,
+    color 0.1s;
+  -webkit-transition:
+    0.5s,
+    color 0.1s;
+  -moz-transition:
+    0.5s,
+    color 0.1s;
 }
 
 #cardsbuttons:hover {
@@ -627,9 +648,15 @@ a {
 }
 
 .desayunobutton Button {
-  transition: 0.5s, color 0.1s;
-  -webkit-transition: 0.5s, color 0.1s;
-  -moz-transition: 0.5s, color 0.1s;
+  transition:
+    0.5s,
+    color 0.1s;
+  -webkit-transition:
+    0.5s,
+    color 0.1s;
+  -moz-transition:
+    0.5s,
+    color 0.1s;
 }
 
 .desayunobutton Button:hover {
@@ -641,9 +668,15 @@ a {
 }
 
 .desayunobutton2 Button {
-  transition: 0.5s, color 0.1s;
-  -webkit-transition: 0.5s, color 0.1s;
-  -moz-transition: 0.5s, color 0.1s;
+  transition:
+    0.5s,
+    color 0.1s;
+  -webkit-transition:
+    0.5s,
+    color 0.1s;
+  -moz-transition:
+    0.5s,
+    color 0.1s;
 }
 
 .desayunobutton2 Button:hover {
@@ -706,7 +739,13 @@ a {
       #45ebf777
     );
   background-size: 40px 70px;
-  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+  background-position:
+    0 0,
+    0 0,
+    20px 35px,
+    20px 35px,
+    0 0,
+    20px 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -727,6 +766,10 @@ a {
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
+}
+
+.accordion-header {
+  background-color: #78fffd;
 }
 
 .desayunoclass3 {
@@ -871,7 +914,13 @@ a {
       #45ebf777
     );
   background-size: 40px 70px;
-  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+  background-position:
+    0 0,
+    0 0,
+    20px 35px,
+    20px 35px,
+    0 0,
+    20px 35px;
 }
 
 .tablecontent img {
@@ -906,31 +955,38 @@ a {
   justify-content: center;
   background-image: url("./assets/fondoheader.png");
   -webkit-animation: bg-pan-left 20s linear infinite both;
-	        animation: bg-pan-left 20s linear infinite both;
-          background-color: #dbfffe;
-
-  
+  animation: bg-pan-left 20s linear infinite both;
+  background-color: #dbfffe;
+  font-size: x-large;
 }
 
 .sectionreserva {
   font-family: Josefin Sans;
   background-image: url("./assets/fusionrest.jpg");
-  background-size:cover;  
+  background-size: cover;
 }
 
-.reservabutton{
-  transition: .5s, color .10s;
-        -webkit-transition: .5s, color .10s;
-        -moz-transition: .5s, color .10s;
-  
+.reservabutton {
+  transition:
+    0.5s,
+    color 0.1s;
+  -webkit-transition:
+    0.5s,
+    color 0.1s;
+  -moz-transition:
+    0.5s,
+    color 0.1s;
 }
 
-.reservabutton:hover{
+.reservabutton:hover {
   transform: scale3d(1.5, 1.5, 0.3);
-        -webkit-transform: scale3d(1.5, 1.5, 0.3);
-        -moz-transform: scale3d(1.5, 1.5, 0.3);
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
 
+.registroalert {
+  font-family: "Josefin sans";
+}
 
 @media screen and (max-width: 550px) {
   #footerid {

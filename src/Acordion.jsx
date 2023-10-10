@@ -6,11 +6,13 @@ import lasana from "./assets/lasana.jpg"
 import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
+
+
 function Acordion() {
   return (
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header className="acordeonheader">
+        <Accordion.Header >
           Desayunos
         </Accordion.Header>
         <Accordion.Body className="desayunoclass">
